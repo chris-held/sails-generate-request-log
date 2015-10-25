@@ -1,0 +1,32 @@
+{
+  "name": "sails-generate-request-log",
+  "version": "0.10.0",
+  "description": "sails generate request-log",
+  "main": "Generator.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "request-log",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "balderdashy",
+  "license": "MIT",
+  "dependencies": {
+  	"lodash": ">=2.4.x",
+  	"merge-defaults": ">=0.1.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*"
+  },
+  "sailsGenerator": {
+    "type": "request-log",
+    "behavior": "overrides `sails generate request-log`",
+    "sailsVersion": "~0.10.0"
+  }
+}
