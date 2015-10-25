@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-request-log",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "sails generate request-log",
   "main": "Generator.js",
   "scripts": {
