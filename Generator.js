@@ -92,9 +92,9 @@ module.exports = {
 
     // // Creates a folder at a static path
     // './hey_look_a_folder': { folder: {} }
-    '/api/models/RequestLog.js': {copy: 'RequestLog.js'},
-    '/api/controllers/RequestLogController.js': {copy: 'RequestLogController.js'},
-    '/config/requestLogger.js': {copy: 'requestLogger.js'}
+    './api/models/RequestLog.js': {template: 'RequestLog.js'},
+    './api/controllers/RequestLogController.js': {template: 'RequestLogController.js'},
+    './config/requestLogger.js': {template: 'requestLogger.js'}
 
   },
 
