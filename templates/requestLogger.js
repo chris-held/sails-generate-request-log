@@ -8,7 +8,7 @@ module.exports = {
 	      requestHeaders: req.headers,
 	      requestBody: req.body
 	    }, function(err, log){
-	      console.log("Request Logged:", JSON.stringify(log));
+	      sails.log.verbose("Request Logged:", JSON.stringify(log));
 	    });
 	  });
 	  
