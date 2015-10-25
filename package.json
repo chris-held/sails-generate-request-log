@@ -13,11 +13,11 @@
     "generate",
     "plugin"
   ],
-  "author": "balderdashy",
+  "author": "chris-held",
   "license": "MIT",
   "dependencies": {
-  	"lodash": ">=2.4.x",
-  	"merge-defaults": ">=0.1.0"
+    "lodash": ">=2.4.x",
+    "merge-defaults": ">=0.1.0"
   },
   "devDependencies": {
     "sails-generate": "*",
@@ -28,5 +28,13 @@
     "type": "request-log",
     "behavior": "overrides `sails generate request-log`",
     "sailsVersion": "~0.10.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-held/sails-generate-request-log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chris-held/sails-generate-request-log/issues"
+  },
+  "homepage": "https://github.com/chris-held/sails-generate-request-log#readme"
 }
