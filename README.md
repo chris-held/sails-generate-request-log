@@ -21,11 +21,47 @@ $ npm install sails-generate-request-log
 $ sails generate request-log 
 ```
 
+#### Adding logging to middleware
+To enable request logging you'll need to add the logger to your existing middleware stack in config/http.js, like so:
+
+```js
+//require the logger
+var logger = require('./requestLogger')
+module.exports.http = {
+
+  middleware: {
+
+    order: [
+      'startRequestTimer',
+      'cookieParser',
+      'session',
+      //add a custom logging function
+      'requestLogger',
+      'bodyParser',
+      'handleBodyParserError',
+      'compress',
+      'methodOverride',
+      'poweredBy',
+      '$custom',
+      'router',
+      'www',
+      'favicon',
+      '404',
+      '500'
+    ],
+
+    //define the custom logging function you referenced in the above order
+    requestLogger: logger.requestLogger
+
+  }
+```
+
+
+
 
 
 ### Development
 
-To get started quickly and see this generator in action, ...
 
 Also see `CONTRIBUTING.md` for more information on overriding/enhancing existing generators.
 
